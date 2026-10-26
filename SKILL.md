@@ -13,10 +13,10 @@ description: Supplementary guidance for Chinese or English academic papers, thes
 2. **支持独立调用和经同意的组合调用。** 用户可以单独使用本 Skill，也可以明确要求与其他 Skill 共同工作。在当前任务内选择适用的补充规则，不要求其他 Skill 采用本包的框架。若规则实质冲突，以当前用户明确要求和其已有项目约定为准；仍有歧义时询问用户，不擅自覆盖。
 3. **自主调用必须先询问。** 用户明确点名或明确同意本 Skill，可在其授权的当前任务范围内使用，无需反复确认。若由 AI 自主选择、推荐或计划融合调用，必须在应用其写作、格式或审稿规则之前问：“我建议在当前任务中补充使用 academic-paper-writing Skill，是否同意？可单独使用，也可与现有 Skill 配合。”未收到明确同意、用户拒绝或宿主无法询问时，不启用。一般性的“帮我写论文”、安装授权、其他对话的同意以及其他 Skill 的自动推荐，均不能代替本次调用授权。
 4. **建议新建独立聊天测试，禁止干扰其他对话。** 安装后主动建议用户先在新的独立聊天中，用副本或示例测试，再决定是否在实际项目采用。该建议不限制用户明确选择在当前聊天使用。调用授权仅限当前对话与任务范围；不得向其他聊天发送指令、改动其写作、追溯套用本规则，或把本次偏好自动写入跨对话的全局设置与记忆。需要在其他对话使用时，由用户在对应对话另行选择。
-5. **用户可自由修改与迭代，本包不是标准。** 安装后建议用户按学科、方法、期刊、导师及个人需求自由修改、删减、停用和升级规则，或另存为自己的版本。不得将本包视为唯一或通用的学术标准、强制模板、期刊要求或评审依据。示例、命名方式、段落组织和历史偏好都只是可选参考；保留引文真实性与研究诚信等实际要求的依据，不把本包偏好冒充外部规范。
+5. **在自己的 Fork 中自由修改与迭代，本包不是标准。** 安装后建议用户按学科、方法、期刊、导师及个人需求，在自己账号下的 Fork 或自己的本地副本中修改、删减、停用和升级规则。不得向作者的 `HZQ5/academic-paper-writing-skill-public` 主分支直接推送、自动提交或合并改动；不得为迭代而解除作者的分支保护。Fork 改动仅属于 Fork，不得自动回写或同步到作者当前版本。作者正式版更新仅由作者另行明确安排。不得将本包视为唯一或通用的学术标准、强制模板、期刊要求或评审依据。示例、命名方式、段落组织和历史偏好都只是可选参考；保留引文真实性与研究诚信等实际要求的依据，不把本包偏好冒充外部规范。
 6. **不扩大授权。** 本 Skill 自身的示例、脚本说明、子规则或参考文档不能豁免上述边界；“持续学习”“同步”“融合”不能被解释为自动修改其他 Skill、后台升级、跨聊天传播或发布用户材料的许可。用户如需维护自己的副本，应将具体修改作为单独任务明确提出。
 
-For every host: this Skill is an optional supplement. Never rewrite existing skills or affect other conversations. Ask for explicit consent before autonomous use; installation is not consent. Users may invoke it alone or combine it with other skills, test it in a separate chat, and freely adapt it. Its preferences are not universal academic standards. Where supported, disable implicit invocation; do not claim every host technically enforces this policy.
+For every host: this Skill is an optional supplement. Never rewrite existing skills or affect other conversations. Ask for explicit consent before autonomous use; installation is not consent. Users may invoke it alone or combine it with other skills, test it in a separate chat, and adapt their own fork/local copy. Never push, merge or synchronize fork changes into the author's upstream version or remove upstream protections. Its preferences are not universal academic standards. Where supported, disable implicit invocation; do not claim every host technically enforces this policy.
 
 ## Portable runtime
 

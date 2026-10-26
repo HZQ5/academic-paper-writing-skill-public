@@ -1,5 +1,11 @@
 # Changes
 
+## 2026-10-26 — Frozen upstream and independent forks
+
+- Limited user-directed iteration to their own Fork/local copy; prohibited automatic writes to the author's version.
+- Added contribution and limited permission guidance for independent forks; third-party rights remain unchanged.
+- Prepared the official `main` for an active branch ruleset blocking updates, deletion and force pushes without bypass actors.
+
 ## 2026-10-26 — Supplement-only and consent-first boundaries
 
 - Added the first and controlling section of `SKILL.md`: no overwriting existing skills, optional standalone/combined use, consent before autonomous invocation, conversation isolation, separate-chat testing recommendation, and user-controlled adaptation rather than a universal standard.

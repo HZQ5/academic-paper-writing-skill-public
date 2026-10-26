@@ -1,6 +1,6 @@
 {
   "skill": "academic-paper-writing",
-  "file_count": 28,
+  "file_count": 29,
   "files": [
     {
       "path": ".gitignore",
@@ -9,23 +9,28 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1420,
-      "sha256": "df2d8594a6f11a18b5a38e4ec9bbc6e7cbdf4ec7f8bb009b2f5f571ad5f9c047"
+      "bytes": 1835,
+      "sha256": "710c26702a2067068a5f6e6b50544af62e6d50a1ce05bb92d690062722d6c94c"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1274,
+      "sha256": "2c9286022b03c093eedb184a517cf6df3f3b1c88dc5397a00537425b6b41d4fd"
     },
     {
       "path": "PORTABLE.md",
-      "bytes": 48389,
-      "sha256": "5281941b7516431a2d5cd5e7e1ccfcb39af434a5d12bab257abc79dd8e373d01"
+      "bytes": 49215,
+      "sha256": "d3f0e8733fe44086c2637da91accf7be836fca9089de2198f5968f05a5ed6018"
     },
     {
       "path": "README.md",
-      "bytes": 6656,
-      "sha256": "18d8d53b4a9fa371668c453dfb4f8151eee195f59419f4b4f657f4bee73823cf"
+      "bytes": 7905,
+      "sha256": "2ceea14d44c2996d29141f42fc6ce98cce5289ead285841bbcc120c13652d5ba"
     },
     {
       "path": "SKILL.md",
-      "bytes": 10253,
-      "sha256": "610f0a1bff512ada49d63d22796b848f87659484dc62ec30a1cc02eca831069c"
+      "bytes": 10712,
+      "sha256": "66c3643d3e55bb4eec33d83231f8676c157f778086764cf8fa13a43a89f5c971"
     },
     {
       "path": "agents/openai.yaml",
@@ -39,8 +44,8 @@
     },
     {
       "path": "install.py",
-      "bytes": 3042,
-      "sha256": "52325df8f9c73234b8c0bc20e28e9d5cc50a6c5ecb3c81f89ac0aebed02b8146"
+      "bytes": 3128,
+      "sha256": "df414f54061f4635c0bc967006f348d2140f1d2e035545aff50e927a7e6d80c0"
     },
     {
       "path": "references/03-standards-and-registries.md",
@@ -74,8 +79,8 @@
     },
     {
       "path": "references/14-split-maintenance.md",
-      "bytes": 1523,
-      "sha256": "340575db050a911e8bdb009b6ed5899cd09827770de67f6091a8336296313aef"
+      "bytes": 1922,
+      "sha256": "6cebbf068ccd9c2135d726f0c1f6d6af4ebe4d5579b43f8525fa0159132c0a9c"
     },
     {
       "path": "references/journal-data/abs_ajg_2024_3plus.csv",
@@ -147,5 +152,5 @@
   "manifest_excludes": [
     "MANIFEST.json"
   ],
-  "edition": "supplement-only-consent-first"
+  "edition": "consent-first-frozen-upstream"
 }
