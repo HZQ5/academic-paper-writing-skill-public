@@ -1,4 +1,6 @@
 interface:
   display_name: "学术论文写作"
-  short_description: "论文论证、理论机制、来源核验与作者修订逻辑的独立写作工作流"
-  default_prompt: "使用 $academic-paper-writing，在保留研究边界与核实引文的前提下修改我的论文。"
+  short_description: "经用户同意使用的论文写作补充规则，可独立或组合调用，不覆盖现有技能"
+  default_prompt: "在当前任务中使用 $academic-paper-writing 作为补充，保留现有技能与研究边界，先遵守其第一原则。"
+policy:
+  allow_implicit_invocation: false

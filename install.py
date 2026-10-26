@@ -57,7 +57,12 @@ def main() -> int:
         except BaseException:
             shutil.rmtree(destination)
             raise
-    print("Installed. Refresh the host's Skill list or open a new session.")
+    print("Installed as an optional supplement; installation is not consent to use it.")
+    print("Existing skills and other conversations must remain unaffected.")
+    print("Recommendation: open a separate chat and test with a copy or example first.")
+    print("You may adapt, remove or iterate these rules; they are not universal academic standards.")
+    print("Autonomous invocation requires explicit user consent in the current task.")
+    print("Refresh the host's Skill list or open a new session to discover the Skill.")
     return 0
 
 

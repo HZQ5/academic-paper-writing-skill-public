@@ -1,5 +1,16 @@
 # 学术论文写作 Skill · 通用公开版
 
+## 第一原则：仅作补充，由用户决定是否采用
+
+**安装不等于启用；不得改写现有 Skill，不得干扰其他对话；AI 自主调用前必须询问用户。** 这一限制优先于本包内的写作规则、历史偏好和所有示例。
+
+- 不修改、覆盖、删除或替换已有技能；同名安装立即停止。组合调用仅在当前任务中协作，不改写其他 Skill 的文件、全局指令或共享记忆。
+- 可单独调用，也可经用户同意与其他 Skill 配合。用户明确点名即为当前任务授权；AI 自主选择时必须先询问，收到明确同意后才应用。普通论文请求和安装行为不构成调用同意。
+- **建议安装后在新建的独立聊天中，用副本或示例先测试。** 不自动影响其他聊天的学术写作；在一个对话中的授权不能传递到另一个对话。
+- **建议按自己的需求自由修改、删减、停用和迭代升级。** 本包提供参考方法，不是统一学术标准，也不要求其他技能或用户迁就本包。
+
+完整约束是 `SKILL.md` 正文的首个章节。Codex 元数据设为 `allow_implicit_invocation: false`；其他宿主须遵守先询问的文本规则。这些文件不能保证每一种 AI 产品都在技术上强制执行权限或隔离，宿主实际支持情况仍需测试。
+
 用于中英文学术论文、学位论文、文献综述、理论论证与审稿修订。保留研究边界，组织论证链，核查引文与证据，提供可直接替换的修订文本。
 
 **公开地址：** https://github.com/HZQ5/academic-paper-writing-skill-public
@@ -25,7 +36,7 @@ cd academic-paper-writing
 | 支持 `.agents/skills` 的工具 | `python3 install.py --target generic` | `~/.agents/skills/academic-paper-writing` |
 | 自定义/项目目录 | `python3 install.py --dest /path/to/project/.agents/skills` | 指定目录下的 `academic-paper-writing/` |
 
-可先在命令末尾加 `--dry-run` 查看目标位置。安装后刷新技能列表或打开新会话。Codex 可用 `$academic-paper-writing`，Claude Code 可用 `/academic-paper-writing`；也可以直接描述论文任务。
+可先在命令末尾加 `--dry-run` 查看目标位置。安装后建议打开独立新会话测试。Codex 可显式用 `$academic-paper-writing`，Claude Code 可显式用 `/academic-paper-writing`。AI 对一般论文任务自主推荐本技能时，必须先询问是否调用，不能直接套用规则。
 
 不运行安装器时，将 `SKILL.md`、`agents/`、`references/`、`scripts/`、`assets/` 一起复制到宿主的 `skills/academic-paper-writing/`。不要只复制入口，否则会缺少参考资料。
 
@@ -37,7 +48,7 @@ cd academic-paper-writing
 
 可复制给 AI：
 
-> 请读取 https://github.com/HZQ5/academic-paper-writing-skill-public 的 SKILL.md，并按当前论文任务读取相关 references。若支持安装 Agent Skills，请先检查本机是否有同名技能，再安装完整目录；若不支持安装，请将规则用于当前对话。无法访问链接时请说明，并让我提供 PORTABLE.md。不得声称已读取未访问的文献，不得编造引用或数据。
+> 请从 https://github.com/HZQ5/academic-paper-writing-skill-public 安装完整 Skill，先读 SKILL.md 的第一原则。仅补充，不改写任何已有技能；同名目录存在时停止。安装不等于同意启用，AI 自主调用前必须先问我。建议安装后另开独立聊天测试，不影响其他对话。若不支持安装，仅说明如何提供 PORTABLE.md，等我明确同意后再将规则用于当前任务。我可按需自由修改和迭代，不把它作为统一标准。
 
 **兼容范围：** 支持 Agent Skills 的宿主可安装；能读 Markdown 的 AI 可使用规则。不能保证所有聊天产品都支持原生安装、脚本运行或永久记忆，未逐一完成各产品端到端实测。
 

@@ -1,5 +1,12 @@
 # Changes
 
+## 2026-10-26 — Supplement-only and consent-first boundaries
+
+- Added the first and controlling section of `SKILL.md`: no overwriting existing skills, optional standalone/combined use, consent before autonomous invocation, conversation isolation, separate-chat testing recommendation, and user-controlled adaptation rather than a universal standard.
+- Disabled implicit invocation in Codex metadata and made the discovery description consent-aware.
+- Updated installation notices, README and portable text to distinguish installation from consent to use; regenerated manifest and download packages.
+- Existing private repositories and local installations are outside this change.
+
 ## 2026-10-26 — Public portable edition
 
 - Copied all 26 source files from commit `95568a02902de76adbee1630aac2439716ca96bd`; source history is not published.
