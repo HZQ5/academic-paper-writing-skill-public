@@ -1,0 +1,150 @@
+{
+  "skill": "academic-paper-writing",
+  "file_count": 28,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 41,
+      "sha256": "8ab250b749fae9eaec416e2ea2c9238c37a02f53d86c7f41a529975c24a2e3f7"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 737,
+      "sha256": "c40efc1c92b66bcbbb84605f7e80400d569456851e95b273c4958471810c1475"
+    },
+    {
+      "path": "PORTABLE.md",
+      "bytes": 44651,
+      "sha256": "84773588044f0caa52194ca0e502fb1d22a41b480f7db7f78c706880f68c08ea"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5146,
+      "sha256": "da69f694a35706bf9e99abe5c61dcbde167772ca952b87a8a2877f6681b484ba"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 6671,
+      "sha256": "cf2d1f1778aad6ca6c6b4b2def5d0fcaefbd1853331de283144a204bed0ed87e"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 282,
+      "sha256": "fac18414e9e8a7dc2c57578d26ad807077b9eea169d6d4ae3c0279884597734a"
+    },
+    {
+      "path": "assets/project-config.example.yaml",
+      "bytes": 735,
+      "sha256": "09f70760c88e9f375a7dbd3bc3869d18d98aedf194a094b3ba5dae2763cb9187"
+    },
+    {
+      "path": "install.py",
+      "bytes": 2587,
+      "sha256": "d2054b305caba85cb682d892f63ae98de8320ccede7f720d424c2abbeb9f8400"
+    },
+    {
+      "path": "references/03-standards-and-registries.md",
+      "bytes": 3312,
+      "sha256": "276bbba5a3ed43b5a4e8ba820bb364485aae7c65621bd9a4227eb3df1e644466"
+    },
+    {
+      "path": "references/04-academic-writing.md",
+      "bytes": 2993,
+      "sha256": "ad9105fef4b114185c41c7eb1d45f5ec2c7c12557f478a031507b4b4485f5428"
+    },
+    {
+      "path": "references/06-web-and-source-collection.md",
+      "bytes": 1917,
+      "sha256": "b261ce7564a68a8a7ecdbe866dd9e6e0346e90847dde9491760a2c622b510b79"
+    },
+    {
+      "path": "references/07-data-evidence.md",
+      "bytes": 2076,
+      "sha256": "c6d103a966349417ccd5734ac1fe105ddebaee5cbdcf37c2dca25db2780040d8"
+    },
+    {
+      "path": "references/08-quality-and-release.md",
+      "bytes": 1813,
+      "sha256": "4dd79aac7d6647c866f77461f1616c700ed2911d779357d9f8cc3b058524e7a4"
+    },
+    {
+      "path": "references/11-language-calibration.md",
+      "bytes": 1833,
+      "sha256": "6908fd58a9cf9a7a603409c3cbba65ec5cea01301c70de2991f43d2baeb362fb"
+    },
+    {
+      "path": "references/14-split-maintenance.md",
+      "bytes": 1523,
+      "sha256": "340575db050a911e8bdb009b6ed5899cd09827770de67f6091a8336296313aef"
+    },
+    {
+      "path": "references/journal-data/abs_ajg_2024_3plus.csv",
+      "bytes": 22156,
+      "sha256": "b8ee718b016c6f72d31f72120b007357d177bdc7693f7bec0ce0373528f695ae"
+    },
+    {
+      "path": "references/journal-data/ft50_2026_status.csv",
+      "bytes": 5213,
+      "sha256": "d39971a233931192662d9d4738b226b1eadaed6b75a2c94df0c95c4e21313c98"
+    },
+    {
+      "path": "references/journal-data/swufe_2025_journal_tiers.csv",
+      "bytes": 45546,
+      "sha256": "b0246011021aaaf03ffef404c74847a8a70b595e3a7dcc237097fc461fc83d78"
+    },
+    {
+      "path": "references/journal-data/utd24_current.csv",
+      "bytes": 3393,
+      "sha256": "962c9ac8539d552ea077d5655d92d697d1852ae8e3af24927ab002c13c4ed1c9"
+    },
+    {
+      "path": "references/journal-data/utd24_ft50_legacy_image_snapshot.csv",
+      "bytes": 2048,
+      "sha256": "651e95bc326be91134d075781b7a2abaffb633ad406e968650dd65a54b03ad10"
+    },
+    {
+      "path": "references/legacy/hzq-academic-paper-writing-cn.md",
+      "bytes": 14916,
+      "sha256": "7108347b2f42ca1ecbb798983d285089393bcbe65f4078d262107980c4f58904"
+    },
+    {
+      "path": "references/legacy/hzq-academic-writing.md",
+      "bytes": 3568,
+      "sha256": "9203208e239b51f10f9c738c00686efb116af4ae1c0746dab4a127f1c104fb28"
+    },
+    {
+      "path": "references/legacy/hzq-literature-review.md",
+      "bytes": 2955,
+      "sha256": "addbbaf3600580f9b6958471488d7184f81fcc8154f0fc3230190d53f840a652"
+    },
+    {
+      "path": "scripts/audit_workbench.py",
+      "bytes": 2208,
+      "sha256": "41667061a942be2713965d4f42e933f9ad7da0913f1fa5f36b7ee532f9f0a73b"
+    },
+    {
+      "path": "scripts/init_project.py",
+      "bytes": 1652,
+      "sha256": "f601a324ae386d87ba838eb70da0bac47451591a56aac1e8612964c96d65bc7c"
+    },
+    {
+      "path": "scripts/lookup_journal_rank.py",
+      "bytes": 3103,
+      "sha256": "9af14dcd5501e10cf79f1866b7d3ded4a3a4ff549af06ed83f107fbbda51cd90"
+    },
+    {
+      "path": "scripts/privacy_scan.py",
+      "bytes": 1712,
+      "sha256": "ce2a7c0d15a8210c674d0d41ce76516a266537493142d8e7c6bee65dd8ae7266"
+    },
+    {
+      "path": "scripts/validate_evidence.py",
+      "bytes": 1966,
+      "sha256": "02836c15f58c7039bfdcbc4b7a411d46d694b41f56145dca8f6366aa915ec066"
+    }
+  ],
+  "source_commit": "95568a02902de76adbee1630aac2439716ca96bd",
+  "manifest_excludes": [
+    "MANIFEST.json"
+  ]
+}

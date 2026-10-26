@@ -1,0 +1,52 @@
+source_seq,journal_title,ft50_snapshot,utd24_snapshot
+1,Academy of Management Journal,YES,YES
+2,Academy of Management Review,YES,YES
+3,"Accounting, Organizations and Society",YES,NO
+4,Administrative Science Quarterly,YES,YES
+5,American Economic Review,YES,NO
+6,Contemporary Accounting Research,YES,NO
+7,Econometrica,YES,NO
+8,Entrepreneurship Theory and Practice,YES,NO
+9,Harvard Business Review,YES,NO
+10,Human Relations,YES,NO
+11,Human Resource Management,YES,NO
+12,Information Systems Research,YES,YES
+13,Journal of Accounting and Economics,YES,YES
+14,Journal of Accounting Research,YES,YES
+15,Journal of Applied Psychology,YES,NO
+16,Journal of Business Ethics,YES,NO
+17,Journal of Business Venturing,YES,NO
+18,Journal of Consumer Psychology,YES,NO
+19,Journal of Consumer Research,YES,YES
+20,Journal of Finance,YES,YES
+21,Journal of Financial and Quantitative Analysis,YES,NO
+22,Journal of Financial Economics,YES,YES
+23,Journal of International Business Studies,YES,YES
+24,Journal of Management,YES,NO
+25,Journal of Management Information Systems,YES,NO
+26,Journal of Management Studies,YES,NO
+27,Journal of Marketing Research,YES,YES
+28,Journal of Marketing,YES,YES
+29,Journal of Operations Management,YES,YES
+30,Journal of Political Economy,YES,NO
+31,Journal of the Academy of Marketing Science,YES,NO
+32,Management Science,YES,YES
+33,Manufacturing and Service Operations Management,YES,YES
+34,Marketing Science,YES,YES
+35,MIS Quarterly,YES,YES
+36,Operations Research,YES,YES
+37,Organization Science,YES,YES
+38,Organization Studies,YES,NO
+39,Organizational Behavior and Human Decision Processes,YES,NO
+40,Production and Operations Management,YES,YES
+41,Quarterly Journal of Economics,YES,NO
+42,Research Policy,YES,NO
+43,Review of Accounting Studies,YES,NO
+44,Review of Economic Studies,YES,NO
+45,Review of Finance,YES,NO
+46,Review of Financial Studies,YES,YES
+47,Sloan Management Review,YES,NO
+48,Strategic Entrepreneurship Journal,YES,NO
+49,Strategic Management Journal,YES,YES
+50,The Accounting Review,YES,YES
+51,Journal of Computing,NO,YES

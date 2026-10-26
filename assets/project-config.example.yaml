@@ -1,0 +1,27 @@
+project:
+  title: "Example academic or teaching-case project"
+  timezone: "Asia/Shanghai"
+  language: "zh-CN"
+  genre: "academic-paper"
+  target_venue: null
+scope:
+  research_question: null
+  source_boundary: "user-supplied and explicitly authorized sources"
+  external_search_allowed: false
+  citation_style: "author-date"
+modules:
+  - "03-standards-and-registries"
+  - "04-academic-writing"
+  - "07-data-evidence"
+  - "08-quality-and-release"
+outputs:
+  formats: ["docx", "xlsx"]
+  date_prefix: true
+evidence:
+  require_verified_locator: true
+  require_exact_quote_for_direct_claims: true
+  separate_secondary_citations: true
+privacy:
+  repository_visibility: "private"
+  allow_raw_corpus_commit: false
+  allow_personal_paths: false

@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术论文写作"
+  short_description: "论文论证、理论机制、来源核验与作者修订逻辑的独立写作工作流"
+  default_prompt: "使用 $academic-paper-writing，在保留研究边界与核实引文的前提下修改我的论文。"
