@@ -1,19 +1,74 @@
-# Language calibration: independently maintained branch
+# 中英文学术语言规范
 
-Use `academic-language-calibration` for scholarly expression, case narration, teaching-note analysis, theory-figure labels and research-work communication. This branch routes language decisions; it does not duplicate the independent skill's rules.
+这是公开包内置的语言模块，不需要其他 Skill、私有语料或作者历史对话。它指导表达和衔接，不能替代研究设计、全文核验或期刊官方规则。表达偏好可按用户、学科和目标期刊调整。
 
-## Invocation
+## 1. 先守住含义，再改善表达
 
-1. Identify genre, passage function, evidence limits and authorized editing scope.
-2. Resolve the independent skill from the current catalog and read its complete `SKILL.md`; load its relevant references.
-3. Supply only the necessary passage and source/status information. Keep private corpus records in the project.
-4. Review changes in actors, dates, quantities, modality, constructs and inference strength. Return substantive gaps to the evidence or case module rather than repairing them through style.
-5. Continue the parent workflow's citation, question alignment, template, figure and visual checks.
+修改前识别句子的功能：定义、描述、文献概括、机制推导、结果、解释或建议。保留主体、分析层级、时间、范围、数量、条件、否定关系和证据强度。结构或证据缺陷单独说明，不能靠润色补造事实。
 
-If unavailable, report that state and use the parent module's existing guidance; do not claim invocation or maintain a drifting parallel copy.
+操作顺序：明确主张 → 检查支持范围 → 删除无分析作用的铺垫 → 补清已有逻辑连接 → 对照原句检查结论是否改变。仅在授权范围内编辑；不借润色改变研究对象、变量或理论。
 
-`academic-word-writing` may call the same independent skill for expression checks. Word formatting and render verification remain with the document workflow. Standalone invocation does not require a parent workbench, Word application or a private teaching-case corpus.
+## 2. 节省读者的理解成本
 
-Generic rules and constructed examples belong in the skill. Exact passages, company evidence, critical reading logs and source images stay in the project. GitHub publication, remote backup, licensing and visibility changes require separate authorization.
+让读者尽早知道这段解释什么，以及它与研究问题的关系。
 
-The independent language skill includes `assets/language_rules.jsonl` for portable constructed calibration examples. Retrieve that file from the independent skill when needed; do not maintain an untracked duplicate in this workbench.
+- 每段承担一个主要任务；开头给方向，中间展开必要依据，末尾说明推进到哪一步。不要机械限定为三句话。
+- 一句同时容纳背景、定义、发现、缺口和贡献时，按关系拆分，不只删限定语。
+- 对有多个先行词的“这一点”“上述问题”“this”明确指代。相邻段落通过实质问题相接，不只是加入“此外”“进一步”。
+- 不为缩短字数删掉条件、反例、样本范围或识别局限。信息密度不是名词堆叠。
+- 压缩没有解释作用的宏观背景、常识铺垫和重复价值判断；保留读者理解机制所必需的环节。
+
+检查：读者是否必须回到前段寻找主体、重新理解术语或猜测两句话的关系？若是，先修复这些问题，不增加修饰词。
+
+## 3. 概念稳定与机制清楚
+
+首次出现关键概念时说明含义、分析层级和用途。相邻概念应有区分标准；数字化、自动化和人工智能等不能为避免重复而互换。
+
+机制句应回答：什么条件改变了谁的什么行动或判断，通过何种过程影响什么结果？使用“赋能”“促进”“协同”“重构”时，应给具体过程或证据，不能以词代机制。
+
+技术部署不自动证明知识吸收、能力形成或绩效改善。资源可获得、资源被使用、使用产生效果是不同主张。图中箭头也须区分时间顺序、理论假设和已检验关系。
+
+## 4. 证据决定措辞强度
+
+| 证据或阶段 | 可采用的表达 | 不可自动升级为 |
+| --- | --- | --- |
+| 研究计划 | 拟检验、计划收集、将考察 | 已发现、已证明 |
+| 理论推导 | 提出、推导、预期；propose / expect | 经验证实 |
+| 横截面或一般观察性证据 | 与……相关；is associated with | 导致、必然提高 |
+| 有识别依据的实验或准实验 | 在明确条件下估计或支持某影响 | 无条件普遍因果规律 |
+| 质性研究 | 在所研究案例中识别过程或关系 | 估计总体效应大小 |
+| 摘要或题录 | 摘要报告、作为全文检索线索 | 已精读全文、已核对具体论证 |
+
+不机械给所有句子加“可能”。已核实描述可直接陈述，不确定性落在需要限定的推断上。统计显著、效应大小和实践重要性分别陈述。“未达到显著”不等于“没有效应”；中介估计不自动确立完整因果机制。
+
+## 5. 中文表达校准
+
+采用正式、具体、克制的论述。删除没有新增信息的“具有重大意义”“有效赋能”“全面跃升”，但保留有指标和证据的实质变化。
+
+“不是……而是……”“不仅……更……”不是禁句。只有区分真实竞争解释或概念边界时使用；两侧处于可比较层级，不无依据否定既有解释。不将近义词包装成新构念。
+
+连接词对应实际逻辑：并列用“同时”；细化用“具体而言”；比较须有共同维度；使用“因此”前检查前提是否充分。结构问题不能靠连续“首先、其次、最后”解决。
+
+## 6. 英文表达与中英互译
+
+使用可辨认的主语和准确动词。可用主动语态明确研究行动，也可在行动者不重要时用被动语态，不一律限制。保留学科术语，不为词汇变化改变构念名称。
+
+- 区分 suggest / show / estimate / explain、association / effect、may / must，不把推测译成证明。
+- 删除没有信息增量的 “in today's rapidly changing world” 等开场；不机械使用 “not merely … but rather …”。
+- 同一构念保持稳定译名，确有概念差别时不得合并；必要时列术语表。
+- 校验数量、单位、百分比与百分点、主体、否定范围、时间和关系方向。例如构造数量“0.5万”是 5,000。
+- 原文没有数据或机制时，翻译不能顺带补齐。中英文版本保持相同证据边界。
+
+## 7. 引文与语言一起核验
+
+把引文放在其支持的具体主张旁。一句有多个不同主张时，应拆分或分别标注。只支持背景的来源不能承担具体机制或结果。
+
+区分原始理论来源与后续应用；不把论文引述他人的发现写成该论文自己的结果。直接引语逐字核对并按当前格式保留定位。转述是否附页码依目标期刊要求和论述精确度决定，正文定位页码与书目的文章页码不能混淆。
+
+有 Zotero 等工具时使用真实动态字段；没有工具时可提供明确标为静态的作者年份引文和书目，不伪称已插入插件字段。引用工具处理元数据与格式，不证明原文支持主张。
+
+## 8. 输出与验收
+
+改写任务：先给可替换文本，再简要列实质性变动和待核验证据。范文学习：提炼段落功能、推进方式和引用逻辑，不搬运其主题、结论或未授权原文。
+
+交付前核对：含义未变；术语与层级稳定；各段有推进；不确定性未丢失；引用紧邻对应论断；无新增数据或夸大因果。正反例见同包 [写作示例](12-writing-examples.md)。

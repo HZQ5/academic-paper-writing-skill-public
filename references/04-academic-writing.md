@@ -1,41 +1,125 @@
-# Academic writing module
+# 学术论文章节写作指南
 
-For the owner's historical writing preferences, load the relevant preserved source from `legacy/hzq-literature-review.md`, `legacy/hzq-academic-paper-writing-cn.md`, or the topic-neutral `legacy/hzq-academic-writing.md`. Treat the current module's evidence gates as controlling when older guidance conflicts. Do not use a topic-specific or course-paper artifact to update this generic module.
+这是一套可调整的论证规则，不是期刊官方标准。优先遵守当前任务、研究设计和目标期刊要求。按所写章节读取本文件，无需安装子 Skill。语言校准见 [语言规范](11-language-calibration.md)，示例见 [写作示例](12-writing-examples.md)。
 
-## Core workflow
+## 0. 写作前确认边界
 
-1. Freeze the research boundary: phenomenon, question, constructs, theory, level, setting, method, evidence, and target venue.
-2. Map each paragraph's rhetorical function before revising: topic, definition, evidence, contrast, gap, positioning, or transition.
-3. Build a literature dialogue by consensus, contradiction, mechanism, boundary, and unresolved theoretical gap.
-4. Draft an argument chain, not an author-by-author inventory.
-5. Reverse-audit every consequential citation and claim.
+从已有材料确认研究问题、对象与分析层级、概念及关系、研究类型、证据、拟写章节、读者和修改范围。只追问会实质改变写法的缺项，不变成长问卷。
 
-## Section functions
+区分计划、进行中和已完成研究。计划可写预期贡献，不可编造执行情况或结果。只有摘要时说明阅读范围，仍可改结构与语言，不可伪造全文定位。局部修改应保留其余章节。
 
-- Abstract: problem, gap, method, evidence, contribution.
-- Introduction: phenomenon/tension → literature response → precise gap → research action → contribution.
-- Literature/hypotheses: definition → evidence/dialogue → theory mechanism → boundary → hypothesis/question.
-- Method: reproducible source, sample, variables/coding, procedure, identification, robustness, ethics.
-- Results: claim first, evidence second, boundary/non-result third.
-- Discussion: interpretation, theoretical change, boundary, practical implication, limitation.
-- Contribution: specify which literature changes and how explanation moves from A to B; do not restate results.
-- Practical implication: correspond to supported effects/mechanisms/boundaries; do not write an unsupported consulting plan.
-- Limitations/future research: pair each limitation with a concrete design or question.
+全文保持可检查的链：问题 → 文献未解决的解释 → 研究行动/设计 → 实际证据 → 有边界的贡献。先修链条，再润色。
 
-## Revision protocol
+## 1. 标题、摘要与关键词
 
-Preserve the author's research boundary. First provide directly replaceable text, then concise logic/evidence notes. Learn from paired before/after examples by extracting editing logic, not copying irrelevant content. Treat repeated user corrections as persistent project rules.
+标题让读者辨认核心对象或关系；副标题可补情境/方法，不堆变量或将未证实结论写成定论。术语与正文一致。
 
-## Evidence-sensitive verbs
+摘要独立说明问题、研究行动、资料或方法、主要结果和贡献。分配随研究类型与期刊要求调整，不强行五句式。实证摘要给有依据的核心发现；概念文章给命题或框架及推导范围；综述给纳入范围、综合结果和议程。未实施研究使用计划性表述。除必要或期刊要求外，不在摘要堆引文和理论沿革。
 
-- experiment/credible econometrics: finds or estimates, bounded by design and context;
-- observational study: associates or relates;
-- case/grounded theory/ethnography: reveals a situated process;
-- theory: proposes, argues, derives;
-- review/meta-analysis: synthesizes within inclusion boundaries;
-- policy/news/company material: states, requires, reports, forecasts;
-- metadata/abstract: suggests pending full-text verification.
+关键词覆盖核心构念、对象及必要方法，不用空泛形容词。验收：题目、摘要、正文对问题、方法和结论陈述一致。
 
-## Prohibitions
+## 2. 引言
 
-Do not invent citations or results, claim full-text reading from abstracts, mix incompatible theories without explanation, add variables outside the design, turn a theoretical proposition into a finding, append a disconnected literature paragraph, or treat a course paper/teaching case as a journal-article model. Put topic-specific construct rules in a named direction skill.
+### 五个逻辑环节
+
+五项是论证功能，不等于必须五段，也不必作为小标题。
+
+1. **Opening**：以与研究问题直接相关的现象、张力或理论难题开篇。事实和数据须可核验；没有可靠数据时用有来源的现象或明确标为示意的例子，不编数字。尽早说清需要解释什么。
+2. **Previous research**：压缩相关研究已解释的内容，按解释路径组织，准确承认贡献。只介绍后文问题所需的理论与概念，不写学科发展史。
+3. **Gap**：指出具体解释在哪个关系、机制、边界或假设上仍不充分，以及会改变什么判断。“研究较少”或“未在某国/行业测试”单独不足以构成理论缺口。核对最接近的研究，不凭检索数量断言首次。
+4. **Resolution**：说明本文如何处理问题，包括必要视角、构念关系、情境选择理由与实际设计。已完成研究可概括核心结果，未完成研究只述拟采取的行动。每个缺口须有对应研究行动。
+5. **Contribution**：说明有望或实际改变哪条既有解释及其适用范围。贡献与研究阶段及证据匹配；换情境、新样本或增加变量不自动构成理论推进。
+
+### 节省读者精力
+
+第一段不塞入全部理论、方法和贡献。段落沿同一问题推进：现象为何难以解释 → 现有解释能处理什么 → 为何仍需研究 → 本文怎样回应。新变量出现前交代其解释作用，不靠术语堆叠。
+
+关键论断紧邻支持它的引文；句末长引文串不能代替逐句支持。综述用于搭建缺口，不逐篇摘要。引言缺口与文末贡献能对应，但不能提前宣告未检验的心理过程或机制。
+
+无指定字数时按期刊、文章类型与信息量调整，不强制页数或段落字数。课堂的“五环节”、4–6页等只有当前用户指定时才是本次约束；字号和行距也不由本 Skill 统一规定。
+
+### 提出可做到的贡献
+
+明确最近邻解释 → 找到未解决且有理论后果的问题 → 说明拟改变的假设、机制或边界 → 检查设计能否识别 → 将贡献缩到可兑现范围。新颖性须对照文献核验，不能靠强措辞“盘活”理论。
+
+验收：读者能复述问题、已有知识、未解决点、研究行动与贡献；没有正文未准备、方法未检验的机制。
+
+## 3. 文献综述
+
+按研究问题分组，不按作者或年份排队。每组说明对象与定义、共识、差异或矛盾、解释差异所需的机制/条件，以及对本文的含义。
+
+区分真正相反的发现与样本、任务、测量或层级差异造成的不可直接比较。不用一篇例外推翻领域。概念、理论推导、实证结果和作者推测分别归类；核对结果是该文自己的还是转引。
+
+可按“综合判断—代表性证据—异同/边界—待解释问题”展开。引文支持综合判断，不能用论文并置替代综合。小节结尾准备下一理论关系，不笼统说“仍需进一步研究”。
+
+独立综述文章应交代检索库、检索式、时间范围、纳排规则和综合方法；不把一般回顾冒称系统综述，不补造筛选数量。
+
+## 4. 理论基础与假设或研究命题
+
+交代理论原来解释什么、关键前提及适用构念，再将理论角色与机制映射到研究对象和变量。名称不能替代推导。
+
+推导关系时，说明起点条件、主体、中间过程、预期结果和边界，比较重要替代解释。多个理论共同使用时说明分工与兼容性，不混用概念或为每个结果另找理论。
+
+- 主效应：论证方向与条件，不只引用同方向结论。
+- 中介：解释为何 X 改变 M、M 如何影响 Y；统计中介不等同因果机制。
+- 调节/交互：解释关系为什么随 Z 改变，明确条件、方向和层级，不只说“存在调节”。
+- 假设句：与推导、操作化和实际检验一致。事后发现不能写成事前假设。
+- 质性、探索性或概念研究：依设计用问题、命题或开放框架，不强加方向性统计假设。
+
+验收：每个关系有推导链与检验对应，没有突然加入的变量或把量表题项当理论定义。
+
+## 5. 方法与研究设计
+
+给出足以判断可信度并在合理条件下复现的描述，不仅列方法名。区分已执行、拟执行和未报告步骤。
+
+**实验/调查/计量研究**：来源与时间、抽样/招募、样本流转与排除、样本量依据、分组/处理分配、操纵与测量、程序、模型、识别假设、缺失处理、实际稳健性检查、伦理和预注册。仅报告真实信息；缺少伦理或预注册资料时待确认，不能默认完成。
+
+**质性研究**：案例或现场选择理由、边界、资料构成与时段、访谈/观察/档案程序、编码与解释形成、反例及替代解释、三角互证和匿名处理。未实施双人编码、饱和度判断或成员核对时不能补写。
+
+**概念/综述研究**：文献选择依据、分析单位、比较或推导步骤、分类标准与边界，不虚构参与者或统计模型。
+
+量表区分原样采用（adopted）、改编（adapted）和自行开发（self-developed），说明真实改动及检验。题项与操纵材料追溯母本。方法应回答引言问题，不靠流程复杂显示价值。
+
+## 6. 结果与发现
+
+先说明回答什么问题或检验，再给证据与不确定性。按研究设计或问题组织，不按软件输出顺序粘贴。区分主要、辅助、探索性和稳健性分析，报告重要零结果、反向或不一致结果。
+
+定量结果按模型报告估计值、适当的不确定性、样本和检验信息；缺项不可编造。统计显著性不替代效应量和实践意义。“某组显著、另一组不显著”本身不证明组间差异显著，应有适当直接比较。
+
+质性发现让读者沿原始证据、概念归纳、关系/过程形成理解解释。展示反例与边界，不用孤立金句代替分析，不造访谈引语或精确发生频率。
+
+表图、正文、摘要的方向、单位、样本数与结论一致。解释可按学科习惯与发现整合，但区分观察与理论推断。
+
+## 7. 讨论与理论贡献
+
+回到研究问题，概括关键发现，解释对既有理论的含义，说明替代解释和适用边界，不将结果换词复述。
+
+每项贡献明确：对话的研究脉络 → 已有解释/假设 → 本文证据或推导增加、修正或限制什么 → 在哪些条件下成立。可用“从A到B”检查增量，不必写成固定句式。
+
+区分情境验证、经验补充、方法/测量贡献与理论贡献；增加地点不自动产生理论贡献。新机制须有实际测量、观察或推导；未检验机制是解释可能性或后续研究，不包装成已验证结果。
+
+贡献数量随增量决定，不凑三点或四点，不同贡献不重复。“首次”“颠覆”“理论失效”等须有充分核验。与理论一致的结果也有价值，不人为制造冲突。
+
+## 8. 实践与管理启示
+
+明确给谁、针对什么决策、依据哪项发现、在什么边界内建议。可依主效应讨论是否采用、依机制讨论如何实施、依边界讨论何时适用；没检验的部分不凑齐。
+
+建议强度匹配证据。购买意愿不能直接改写成已实现销售增长，有限样本关联不能成为普遍实施处方。未测量成本、风险或可行性时说明需进一步验证，不扩写成咨询方案。
+
+## 9. 局限、未来研究与结论
+
+指出限制哪项推断的具体原因，并匹配可检验的后续问题或设计。如横截面限制时间顺序判断，可考虑纵向或实验；不只说“扩大样本”“拓展情境”。不把关键无效性包装成无关紧要的未来方向。
+
+结论回答问题并重申边界，不新增论证、变量或未报告结果。期刊将结论并入讨论时服从其结构。
+
+## 10. 引用、书目与审稿回应
+
+正文引文对应文末条目，文末不混入未引用阅读材料。核验作者、年份、题名、载体、DOI与必要定位；预印本、书评、期刊文章不能混同。页码、作者列法和语言处理按目标期刊要求，期刊目录不提供这些规则。
+
+逐条回应审稿：关切 → 实际修改或不修改理由 → 稿件位置 → 证据。未做实验不写已补充，不同意时给学术理由，不虚构审稿人接受意见。
+
+动态引文须有真实可用的插件/字段接口；没有工具仍可写作和生成静态引用，但说明差异。刷新后核查条目、字号、行距、缩进与分页，按用户模板修正，不将点击 Refresh 当成验收。
+
+## 11. 全文验收
+
+问题一致；主张有相称证据；行动回应缺口；方法支持结果；贡献不超设计；引文书目对应；润色不改实体、条件和结论。缺资料处列待核验项，不伪造完稿。

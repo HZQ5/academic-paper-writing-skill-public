@@ -1,6 +1,6 @@
 {
   "skill": "academic-paper-writing",
-  "file_count": 29,
+  "file_count": 32,
   "files": [
     {
       "path": ".gitignore",
@@ -9,8 +9,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1835,
-      "sha256": "710c26702a2067068a5f6e6b50544af62e6d50a1ce05bb92d690062722d6c94c"
+      "bytes": 2734,
+      "sha256": "36f11da5c6ee830fb9d9e9d8327f9c4dc82f9ce0d34133020912ed26b9d9f1fc"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -19,18 +19,18 @@
     },
     {
       "path": "PORTABLE.md",
-      "bytes": 49215,
-      "sha256": "d3f0e8733fe44086c2637da91accf7be836fca9089de2198f5968f05a5ed6018"
+      "bytes": 67786,
+      "sha256": "655dcfb4a8e80cb748e589162410287743c3254e71ffbf895a2d376813709256"
     },
     {
       "path": "README.md",
-      "bytes": 7905,
-      "sha256": "2ceea14d44c2996d29141f42fc6ce98cce5289ead285841bbcc120c13652d5ba"
+      "bytes": 10702,
+      "sha256": "b77a980700420ce0dd306bc45ed516546eb8b454157288fb033558ef4cfdd169"
     },
     {
       "path": "SKILL.md",
-      "bytes": 10712,
-      "sha256": "66c3643d3e55bb4eec33d83231f8676c157f778086764cf8fa13a43a89f5c971"
+      "bytes": 12154,
+      "sha256": "2fb318b8786dd9ddfae0c31dde70f870d4603efcf7f0a0b5b4cefb06cd1c6a42"
     },
     {
       "path": "agents/openai.yaml",
@@ -54,8 +54,8 @@
     },
     {
       "path": "references/04-academic-writing.md",
-      "bytes": 2993,
-      "sha256": "ad9105fef4b114185c41c7eb1d45f5ec2c7c12557f478a031507b4b4485f5428"
+      "bytes": 10712,
+      "sha256": "fcd5d45c85da9402846dac8d39e1b4a6ffdedfd5ab93a618f73048a6f399063f"
     },
     {
       "path": "references/06-web-and-source-collection.md",
@@ -74,13 +74,18 @@
     },
     {
       "path": "references/11-language-calibration.md",
-      "bytes": 1833,
-      "sha256": "6908fd58a9cf9a7a603409c3cbba65ec5cea01301c70de2991f43d2baeb362fb"
+      "bytes": 6052,
+      "sha256": "14af09a327b8047cc1d563a9941e3ccfcb6086fd8062929fc111bdd3ee8b430f"
+    },
+    {
+      "path": "references/12-writing-examples.md",
+      "bytes": 4304,
+      "sha256": "89026dc867100ddcdce6a630bde3390b25bbade4732123642c30a5181ce0cfd2"
     },
     {
       "path": "references/14-split-maintenance.md",
-      "bytes": 1922,
-      "sha256": "6cebbf068ccd9c2135d726f0c1f6d6af4ebe4d5579b43f8525fa0159132c0a9c"
+      "bytes": 2531,
+      "sha256": "f228ed8fb54ef4abd2690a9b2a4bf6657dca63eb1f69c114f33c01c2b25ef7f0"
     },
     {
       "path": "references/journal-data/abs_ajg_2024_3plus.csv",
@@ -119,13 +124,18 @@
     },
     {
       "path": "references/legacy/hzq-literature-review.md",
-      "bytes": 2955,
-      "sha256": "addbbaf3600580f9b6958471488d7184f81fcc8154f0fc3230190d53f840a652"
+      "bytes": 3047,
+      "sha256": "11f12ff5991016574530f7b6fee3501b10fd5eeb9a2af81e1cf710ebdb9332ef"
     },
     {
       "path": "scripts/audit_workbench.py",
       "bytes": 2208,
       "sha256": "41667061a942be2713965d4f42e933f9ad7da0913f1fa5f36b7ee532f9f0a73b"
+    },
+    {
+      "path": "scripts/build_public_bundle.py",
+      "bytes": 3493,
+      "sha256": "d3d6e1c360c844bb5ee33d535c16f2b578ee445fd93cfc0648cdb52a07043fda"
     },
     {
       "path": "scripts/init_project.py",
@@ -146,11 +156,23 @@
       "path": "scripts/validate_evidence.py",
       "bytes": 1966,
       "sha256": "02836c15f58c7039bfdcbc4b7a411d46d694b41f56145dca8f6366aa915ec066"
+    },
+    {
+      "path": "tests/test_public_bundle.py",
+      "bytes": 4500,
+      "sha256": "2d4c679304f89adba65a499ca48a68c5809c59fa67762feab59bb111440ecba2"
     }
   ],
   "source_commit": "95568a02902de76adbee1630aac2439716ca96bd",
   "manifest_excludes": [
-    "MANIFEST.json"
+    "MANIFEST.json",
+    ".git/",
+    "__pycache__/",
+    ".venv/",
+    ".pytest_cache/",
+    ".DS_Store",
+    ".env",
+    "*.pyc"
   ],
-  "edition": "consent-first-frozen-upstream"
+  "edition": "consent-first-self-contained-writing"
 }

@@ -42,4 +42,4 @@ Do not stack abstracts, invent citations, write a gap as merely â€œfew studies,â
 
 ## Provenance note
 
-The earlier version contained agricultural-product/livestream examples. It was moved to `agri-consumer-livestream-knowledge/references/legacy-agri-literature-review-whitepaper.md` as direction-specific provenance.
+The earlier version contained agricultural-product/livestream examples that were separated into a topic-specific private knowledge base. This is a provenance note, not an instruction to load that base. Use the bundled generic rules and constructed examples; no access to those private materials is needed.

@@ -1,5 +1,13 @@
 # Changes
 
+## 2026-11-03 — Self-contained writing and language modules
+
+- Replaced the external language-Skill routing suggestion with bundled Chinese/English calibration rules; no author-private material or additional Skill is required for ordinary writing.
+- Expanded chapter guidance from title/abstract through introduction, synthesis, theory, methods, results, discussion, implications and limitations, with evidence and study-stage boundaries.
+- Added eight explicitly constructed examples and task-based routing; retained optional preferences rather than imposing course page counts or one research design.
+- Made writing modules visible in README; clarified optional app capabilities and historical provenance.
+- Added deterministic portable/manifest generation and isolated packaging/installation tests. Preserved journal snapshots, consent rules, private installations and frozen-main protection.
+
 ## 2026-10-26 — Frozen upstream and independent forks
 
 - Limited user-directed iteration to their own Fork/local copy; prohibited automatic writes to the author's version.
