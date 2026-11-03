@@ -26,9 +26,26 @@ If the host cannot install Skills, read this file and relevant references as tas
 
 ## Scope and source selection
 
+### 按任务读取内置规则
+
+本包的 `references/` 是随包提供的写作模块，不是需要另外安装的子 Skill。核心写作不调用私有库，也不要求作者的历史对话、论文或 Zotero 文库。
+
+| 当前任务 | 内置入口 |
+| --- | --- |
+| 写作或重构章节 | [章节写作指南](references/04-academic-writing.md)的对应节 |
+| 引言与理论贡献 | 章节指南中的引言、理论贡献；[构造示例](references/12-writing-examples.md) |
+| 文献综述、理论与假设 | 章节指南中的综述与推导；[证据规则](references/07-data-evidence.md) |
+| 润色、压缩、中英互译 | [语言规范](references/11-language-calibration.md)与构造示例 |
+| 期刊筛选与格式核查 | [标准和期刊目录](references/03-standards-and-registries.md)，以及目标期刊现行官方要求 |
+| 审稿回应 | 章节指南的审稿回应节，以及实际意见、稿件和修订位置 |
+
+只加载当前任务所需章节，不必每次读取全部期刊表或历史资料。没有全文、数据或方法信息时，仍可提供有边界的结构建议和语言修改，但要列出缺项，不补造引文或结果。用户要求直接改写时，先给可替换文本，再给必要的证据风险说明。
+
+### Research boundary
+
 Freeze research object, question, constructs, relationships, level, method, evidence boundary, target venue and authorized editing scope. Distinguish empirical, qualitative, conceptual and review articles. Do not expand variables or impose a statistical hypothesis format on a conceptual/qualitative study. Course papers and teaching cases are different genres, not lower-cost substitutes for scholarly evidence or journal-oriented exemplars.
 
-Read `references/04-academic-writing.md` for substantive paper work. For personal historical preferences load only the relevant full source: `references/legacy/hzq-academic-paper-writing-cn.md`, `hzq-academic-writing.md`, or `hzq-literature-review.md`. These provenance documents contain examples and optional sequences; current task, design and evidence gates control. A proposed paragraph count is not a universal rule.
+Read `references/04-academic-writing.md` for substantive paper work. For personal historical preferences load only the relevant full source: `references/legacy/hzq-academic-paper-writing-cn.md`, `references/legacy/hzq-academic-writing.md`, or `references/legacy/hzq-literature-review.md`. These provenance documents contain examples and optional sequences; current task, design and evidence gates control. A proposed paragraph count is not a universal rule.
 
 ## Argument and section functions
 
@@ -53,11 +70,11 @@ Identify whether the operation is continuation, rewrite, translation, comparison
 
 Provide directly usable revised prose first when requested, then concise changes, source locators and unresolved risks. For reviewers map exact concern → original passage → actual revision/non-change rationale → location/evidence. Do not invent reviewer approval or confidentiality constraints.
 
-For language read `references/11-language-calibration.md` and use the independent `academic-language-calibration` when available. Keep academic prose formal, compact and claim-calibrated; avoid repetitive “不是……而是……” scaffolding, slogans and unsupported result adjectives. Legitimate contrast, quotations and the user's meanings take precedence over mechanical phrase deletion.
+For language read the bundled `references/11-language-calibration.md`; its rules and the constructed examples in `references/12-writing-examples.md` are complete within this package. Do not request a separate language Skill to finish ordinary writing or revision. External skills/tools are optional only when the user requests additional capabilities. Preserve legitimate contrast, quotations and the user's meaning rather than mechanically deleting phrases.
 
 ## Tools and acceptance
 
-Use `references/03-standards-and-registries.md` for citations/templates and historical journal-list interpretation; `06-web-and-source-collection.md` for authorized collection; `08-quality-and-release.md` for file and publication checks. Existing specialist literature-review and Zotero skills may support actual evidence work. They are companions, not replacements for the research argument.
+Use `references/03-standards-and-registries.md` for citations/templates and historical journal-list interpretation; `references/06-web-and-source-collection.md` for authorized collection; `references/08-quality-and-release.md` for file and publication checks. Existing specialist literature-review and Zotero skills may support actual evidence work. They are optional companions, not prerequisites or replacements for the research argument.
 
 `scripts/init_project.py`, `validate_evidence.py`, `audit_workbench.py` and `lookup_journal_rank.py` support reproducibility. Verify supplied manuscript templates and rendered deliverables separately. Structural validation does not certify contribution, causal validity or journal acceptance.
 

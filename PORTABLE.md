@@ -2,7 +2,7 @@
 
 **第一原则：仅作补充。安装或读取不等于启用；AI 自主调用前须先询问用户。不改写已有 Skill，不干扰其他对话。建议独立聊天测试。在自己的 Fork 或本地副本中自由迭代，不回写作者正式版，不把它作为统一标准。**
 
-完整约束见 SKILL.md 首节；仅在用户明确同意的当前任务范围内应用。本文包含全部 Markdown 参考；相对路径指向完整版文件。期刊 CSV 与脚本需要完整包，不得假装已查询或运行。
+完整约束见下方 SKILL.md 首节；仅在用户明确同意的当前任务范围内应用。本文包含全部 Markdown 参考，章节与语言规范均已内置，不需要额外子 Skill。相对路径指向完整版文件，单文件使用时可按“文件”标题查找相应内容。期刊 CSV 与脚本需要完整包，不得假装已查询或运行。
 
 
 ---
@@ -37,9 +37,26 @@ If the host cannot install Skills, read this file and relevant references as tas
 
 ## Scope and source selection
 
+### 按任务读取内置规则
+
+本包的 `references/` 是随包提供的写作模块，不是需要另外安装的子 Skill。核心写作不调用私有库，也不要求作者的历史对话、论文或 Zotero 文库。
+
+| 当前任务 | 内置入口 |
+| --- | --- |
+| 写作或重构章节 | [章节写作指南](references/04-academic-writing.md)的对应节 |
+| 引言与理论贡献 | 章节指南中的引言、理论贡献；[构造示例](references/12-writing-examples.md) |
+| 文献综述、理论与假设 | 章节指南中的综述与推导；[证据规则](references/07-data-evidence.md) |
+| 润色、压缩、中英互译 | [语言规范](references/11-language-calibration.md)与构造示例 |
+| 期刊筛选与格式核查 | [标准和期刊目录](references/03-standards-and-registries.md)，以及目标期刊现行官方要求 |
+| 审稿回应 | 章节指南的审稿回应节，以及实际意见、稿件和修订位置 |
+
+只加载当前任务所需章节，不必每次读取全部期刊表或历史资料。没有全文、数据或方法信息时，仍可提供有边界的结构建议和语言修改，但要列出缺项，不补造引文或结果。用户要求直接改写时，先给可替换文本，再给必要的证据风险说明。
+
+### Research boundary
+
 Freeze research object, question, constructs, relationships, level, method, evidence boundary, target venue and authorized editing scope. Distinguish empirical, qualitative, conceptual and review articles. Do not expand variables or impose a statistical hypothesis format on a conceptual/qualitative study. Course papers and teaching cases are different genres, not lower-cost substitutes for scholarly evidence or journal-oriented exemplars.
 
-Read `references/04-academic-writing.md` for substantive paper work. For personal historical preferences load only the relevant full source: `references/legacy/hzq-academic-paper-writing-cn.md`, `hzq-academic-writing.md`, or `hzq-literature-review.md`. These provenance documents contain examples and optional sequences; current task, design and evidence gates control. A proposed paragraph count is not a universal rule.
+Read `references/04-academic-writing.md` for substantive paper work. For personal historical preferences load only the relevant full source: `references/legacy/hzq-academic-paper-writing-cn.md`, `references/legacy/hzq-academic-writing.md`, or `references/legacy/hzq-literature-review.md`. These provenance documents contain examples and optional sequences; current task, design and evidence gates control. A proposed paragraph count is not a universal rule.
 
 ## Argument and section functions
 
@@ -64,11 +81,11 @@ Identify whether the operation is continuation, rewrite, translation, comparison
 
 Provide directly usable revised prose first when requested, then concise changes, source locators and unresolved risks. For reviewers map exact concern → original passage → actual revision/non-change rationale → location/evidence. Do not invent reviewer approval or confidentiality constraints.
 
-For language read `references/11-language-calibration.md` and use the independent `academic-language-calibration` when available. Keep academic prose formal, compact and claim-calibrated; avoid repetitive “不是……而是……” scaffolding, slogans and unsupported result adjectives. Legitimate contrast, quotations and the user's meanings take precedence over mechanical phrase deletion.
+For language read the bundled `references/11-language-calibration.md`; its rules and the constructed examples in `references/12-writing-examples.md` are complete within this package. Do not request a separate language Skill to finish ordinary writing or revision. External skills/tools are optional only when the user requests additional capabilities. Preserve legitimate contrast, quotations and the user's meaning rather than mechanically deleting phrases.
 
 ## Tools and acceptance
 
-Use `references/03-standards-and-registries.md` for citations/templates and historical journal-list interpretation; `06-web-and-source-collection.md` for authorized collection; `08-quality-and-release.md` for file and publication checks. Existing specialist literature-review and Zotero skills may support actual evidence work. They are companions, not replacements for the research argument.
+Use `references/03-standards-and-registries.md` for citations/templates and historical journal-list interpretation; `references/06-web-and-source-collection.md` for authorized collection; `references/08-quality-and-release.md` for file and publication checks. Existing specialist literature-review and Zotero skills may support actual evidence work. They are optional companions, not prerequisites or replacements for the research argument.
 
 `scripts/init_project.py`, `validate_evidence.py`, `audit_workbench.py` and `lookup_journal_rank.py` support reproducibility. Verify supplied manuscript templates and rendered deliverables separately. Structural validation does not certify contribution, causal validity or journal acceptance.
 
@@ -144,47 +161,131 @@ For case/news material, attach `fact`, `inference`, `assumption`, `forecast`, or
 
 ## 文件：references/04-academic-writing.md
 
-# Academic writing module
+# 学术论文章节写作指南
 
-For the owner's historical writing preferences, load the relevant preserved source from `legacy/hzq-literature-review.md`, `legacy/hzq-academic-paper-writing-cn.md`, or the topic-neutral `legacy/hzq-academic-writing.md`. Treat the current module's evidence gates as controlling when older guidance conflicts. Do not use a topic-specific or course-paper artifact to update this generic module.
+这是一套可调整的论证规则，不是期刊官方标准。优先遵守当前任务、研究设计和目标期刊要求。按所写章节读取本文件，无需安装子 Skill。语言校准见 [语言规范](11-language-calibration.md)，示例见 [写作示例](12-writing-examples.md)。
 
-## Core workflow
+## 0. 写作前确认边界
 
-1. Freeze the research boundary: phenomenon, question, constructs, theory, level, setting, method, evidence, and target venue.
-2. Map each paragraph's rhetorical function before revising: topic, definition, evidence, contrast, gap, positioning, or transition.
-3. Build a literature dialogue by consensus, contradiction, mechanism, boundary, and unresolved theoretical gap.
-4. Draft an argument chain, not an author-by-author inventory.
-5. Reverse-audit every consequential citation and claim.
+从已有材料确认研究问题、对象与分析层级、概念及关系、研究类型、证据、拟写章节、读者和修改范围。只追问会实质改变写法的缺项，不变成长问卷。
 
-## Section functions
+区分计划、进行中和已完成研究。计划可写预期贡献，不可编造执行情况或结果。只有摘要时说明阅读范围，仍可改结构与语言，不可伪造全文定位。局部修改应保留其余章节。
 
-- Abstract: problem, gap, method, evidence, contribution.
-- Introduction: phenomenon/tension → literature response → precise gap → research action → contribution.
-- Literature/hypotheses: definition → evidence/dialogue → theory mechanism → boundary → hypothesis/question.
-- Method: reproducible source, sample, variables/coding, procedure, identification, robustness, ethics.
-- Results: claim first, evidence second, boundary/non-result third.
-- Discussion: interpretation, theoretical change, boundary, practical implication, limitation.
-- Contribution: specify which literature changes and how explanation moves from A to B; do not restate results.
-- Practical implication: correspond to supported effects/mechanisms/boundaries; do not write an unsupported consulting plan.
-- Limitations/future research: pair each limitation with a concrete design or question.
+全文保持可检查的链：问题 → 文献未解决的解释 → 研究行动/设计 → 实际证据 → 有边界的贡献。先修链条，再润色。
 
-## Revision protocol
+## 1. 标题、摘要与关键词
 
-Preserve the author's research boundary. First provide directly replaceable text, then concise logic/evidence notes. Learn from paired before/after examples by extracting editing logic, not copying irrelevant content. Treat repeated user corrections as persistent project rules.
+标题让读者辨认核心对象或关系；副标题可补情境/方法，不堆变量或将未证实结论写成定论。术语与正文一致。
 
-## Evidence-sensitive verbs
+摘要独立说明问题、研究行动、资料或方法、主要结果和贡献。分配随研究类型与期刊要求调整，不强行五句式。实证摘要给有依据的核心发现；概念文章给命题或框架及推导范围；综述给纳入范围、综合结果和议程。未实施研究使用计划性表述。除必要或期刊要求外，不在摘要堆引文和理论沿革。
 
-- experiment/credible econometrics: finds or estimates, bounded by design and context;
-- observational study: associates or relates;
-- case/grounded theory/ethnography: reveals a situated process;
-- theory: proposes, argues, derives;
-- review/meta-analysis: synthesizes within inclusion boundaries;
-- policy/news/company material: states, requires, reports, forecasts;
-- metadata/abstract: suggests pending full-text verification.
+关键词覆盖核心构念、对象及必要方法，不用空泛形容词。验收：题目、摘要、正文对问题、方法和结论陈述一致。
 
-## Prohibitions
+## 2. 引言
 
-Do not invent citations or results, claim full-text reading from abstracts, mix incompatible theories without explanation, add variables outside the design, turn a theoretical proposition into a finding, append a disconnected literature paragraph, or treat a course paper/teaching case as a journal-article model. Put topic-specific construct rules in a named direction skill.
+### 五个逻辑环节
+
+五项是论证功能，不等于必须五段，也不必作为小标题。
+
+1. **Opening**：以与研究问题直接相关的现象、张力或理论难题开篇。事实和数据须可核验；没有可靠数据时用有来源的现象或明确标为示意的例子，不编数字。尽早说清需要解释什么。
+2. **Previous research**：压缩相关研究已解释的内容，按解释路径组织，准确承认贡献。只介绍后文问题所需的理论与概念，不写学科发展史。
+3. **Gap**：指出具体解释在哪个关系、机制、边界或假设上仍不充分，以及会改变什么判断。“研究较少”或“未在某国/行业测试”单独不足以构成理论缺口。核对最接近的研究，不凭检索数量断言首次。
+4. **Resolution**：说明本文如何处理问题，包括必要视角、构念关系、情境选择理由与实际设计。已完成研究可概括核心结果，未完成研究只述拟采取的行动。每个缺口须有对应研究行动。
+5. **Contribution**：说明有望或实际改变哪条既有解释及其适用范围。贡献与研究阶段及证据匹配；换情境、新样本或增加变量不自动构成理论推进。
+
+### 节省读者精力
+
+第一段不塞入全部理论、方法和贡献。段落沿同一问题推进：现象为何难以解释 → 现有解释能处理什么 → 为何仍需研究 → 本文怎样回应。新变量出现前交代其解释作用，不靠术语堆叠。
+
+关键论断紧邻支持它的引文；句末长引文串不能代替逐句支持。综述用于搭建缺口，不逐篇摘要。引言缺口与文末贡献能对应，但不能提前宣告未检验的心理过程或机制。
+
+无指定字数时按期刊、文章类型与信息量调整，不强制页数或段落字数。课堂的“五环节”、4–6页等只有当前用户指定时才是本次约束；字号和行距也不由本 Skill 统一规定。
+
+### 提出可做到的贡献
+
+明确最近邻解释 → 找到未解决且有理论后果的问题 → 说明拟改变的假设、机制或边界 → 检查设计能否识别 → 将贡献缩到可兑现范围。新颖性须对照文献核验，不能靠强措辞“盘活”理论。
+
+验收：读者能复述问题、已有知识、未解决点、研究行动与贡献；没有正文未准备、方法未检验的机制。
+
+## 3. 文献综述
+
+按研究问题分组，不按作者或年份排队。每组说明对象与定义、共识、差异或矛盾、解释差异所需的机制/条件，以及对本文的含义。
+
+区分真正相反的发现与样本、任务、测量或层级差异造成的不可直接比较。不用一篇例外推翻领域。概念、理论推导、实证结果和作者推测分别归类；核对结果是该文自己的还是转引。
+
+可按“综合判断—代表性证据—异同/边界—待解释问题”展开。引文支持综合判断，不能用论文并置替代综合。小节结尾准备下一理论关系，不笼统说“仍需进一步研究”。
+
+独立综述文章应交代检索库、检索式、时间范围、纳排规则和综合方法；不把一般回顾冒称系统综述，不补造筛选数量。
+
+## 4. 理论基础与假设或研究命题
+
+交代理论原来解释什么、关键前提及适用构念，再将理论角色与机制映射到研究对象和变量。名称不能替代推导。
+
+推导关系时，说明起点条件、主体、中间过程、预期结果和边界，比较重要替代解释。多个理论共同使用时说明分工与兼容性，不混用概念或为每个结果另找理论。
+
+- 主效应：论证方向与条件，不只引用同方向结论。
+- 中介：解释为何 X 改变 M、M 如何影响 Y；统计中介不等同因果机制。
+- 调节/交互：解释关系为什么随 Z 改变，明确条件、方向和层级，不只说“存在调节”。
+- 假设句：与推导、操作化和实际检验一致。事后发现不能写成事前假设。
+- 质性、探索性或概念研究：依设计用问题、命题或开放框架，不强加方向性统计假设。
+
+验收：每个关系有推导链与检验对应，没有突然加入的变量或把量表题项当理论定义。
+
+## 5. 方法与研究设计
+
+给出足以判断可信度并在合理条件下复现的描述，不仅列方法名。区分已执行、拟执行和未报告步骤。
+
+**实验/调查/计量研究**：来源与时间、抽样/招募、样本流转与排除、样本量依据、分组/处理分配、操纵与测量、程序、模型、识别假设、缺失处理、实际稳健性检查、伦理和预注册。仅报告真实信息；缺少伦理或预注册资料时待确认，不能默认完成。
+
+**质性研究**：案例或现场选择理由、边界、资料构成与时段、访谈/观察/档案程序、编码与解释形成、反例及替代解释、三角互证和匿名处理。未实施双人编码、饱和度判断或成员核对时不能补写。
+
+**概念/综述研究**：文献选择依据、分析单位、比较或推导步骤、分类标准与边界，不虚构参与者或统计模型。
+
+量表区分原样采用（adopted）、改编（adapted）和自行开发（self-developed），说明真实改动及检验。题项与操纵材料追溯母本。方法应回答引言问题，不靠流程复杂显示价值。
+
+## 6. 结果与发现
+
+先说明回答什么问题或检验，再给证据与不确定性。按研究设计或问题组织，不按软件输出顺序粘贴。区分主要、辅助、探索性和稳健性分析，报告重要零结果、反向或不一致结果。
+
+定量结果按模型报告估计值、适当的不确定性、样本和检验信息；缺项不可编造。统计显著性不替代效应量和实践意义。“某组显著、另一组不显著”本身不证明组间差异显著，应有适当直接比较。
+
+质性发现让读者沿原始证据、概念归纳、关系/过程形成理解解释。展示反例与边界，不用孤立金句代替分析，不造访谈引语或精确发生频率。
+
+表图、正文、摘要的方向、单位、样本数与结论一致。解释可按学科习惯与发现整合，但区分观察与理论推断。
+
+## 7. 讨论与理论贡献
+
+回到研究问题，概括关键发现，解释对既有理论的含义，说明替代解释和适用边界，不将结果换词复述。
+
+每项贡献明确：对话的研究脉络 → 已有解释/假设 → 本文证据或推导增加、修正或限制什么 → 在哪些条件下成立。可用“从A到B”检查增量，不必写成固定句式。
+
+区分情境验证、经验补充、方法/测量贡献与理论贡献；增加地点不自动产生理论贡献。新机制须有实际测量、观察或推导；未检验机制是解释可能性或后续研究，不包装成已验证结果。
+
+贡献数量随增量决定，不凑三点或四点，不同贡献不重复。“首次”“颠覆”“理论失效”等须有充分核验。与理论一致的结果也有价值，不人为制造冲突。
+
+## 8. 实践与管理启示
+
+明确给谁、针对什么决策、依据哪项发现、在什么边界内建议。可依主效应讨论是否采用、依机制讨论如何实施、依边界讨论何时适用；没检验的部分不凑齐。
+
+建议强度匹配证据。购买意愿不能直接改写成已实现销售增长，有限样本关联不能成为普遍实施处方。未测量成本、风险或可行性时说明需进一步验证，不扩写成咨询方案。
+
+## 9. 局限、未来研究与结论
+
+指出限制哪项推断的具体原因，并匹配可检验的后续问题或设计。如横截面限制时间顺序判断，可考虑纵向或实验；不只说“扩大样本”“拓展情境”。不把关键无效性包装成无关紧要的未来方向。
+
+结论回答问题并重申边界，不新增论证、变量或未报告结果。期刊将结论并入讨论时服从其结构。
+
+## 10. 引用、书目与审稿回应
+
+正文引文对应文末条目，文末不混入未引用阅读材料。核验作者、年份、题名、载体、DOI与必要定位；预印本、书评、期刊文章不能混同。页码、作者列法和语言处理按目标期刊要求，期刊目录不提供这些规则。
+
+逐条回应审稿：关切 → 实际修改或不修改理由 → 稿件位置 → 证据。未做实验不写已补充，不同意时给学术理由，不虚构审稿人接受意见。
+
+动态引文须有真实可用的插件/字段接口；没有工具仍可写作和生成静态引用，但说明差异。刷新后核查条目、字号、行距、缩进与分页，按用户模板修正，不将点击 Refresh 当成验收。
+
+## 11. 全文验收
+
+问题一致；主张有相称证据；行动回应缺口；方法支持结果；贡献不超设计；引文书目对应；润色不改实体、条件和结论。缺资料处列待核验项，不伪造完稿。
 
 
 ---
@@ -314,25 +415,165 @@ For a Skill release, report source, validation, script checks, privacy findings,
 
 ## 文件：references/11-language-calibration.md
 
-# Language calibration: independently maintained branch
+# 中英文学术语言规范
 
-Use `academic-language-calibration` for scholarly expression, case narration, teaching-note analysis, theory-figure labels and research-work communication. This branch routes language decisions; it does not duplicate the independent skill's rules.
+这是公开包内置的语言模块，不需要其他 Skill、私有语料或作者历史对话。它指导表达和衔接，不能替代研究设计、全文核验或期刊官方规则。表达偏好可按用户、学科和目标期刊调整。
 
-## Invocation
+## 1. 先守住含义，再改善表达
 
-1. Identify genre, passage function, evidence limits and authorized editing scope.
-2. Resolve the independent skill from the current catalog and read its complete `SKILL.md`; load its relevant references.
-3. Supply only the necessary passage and source/status information. Keep private corpus records in the project.
-4. Review changes in actors, dates, quantities, modality, constructs and inference strength. Return substantive gaps to the evidence or case module rather than repairing them through style.
-5. Continue the parent workflow's citation, question alignment, template, figure and visual checks.
+修改前识别句子的功能：定义、描述、文献概括、机制推导、结果、解释或建议。保留主体、分析层级、时间、范围、数量、条件、否定关系和证据强度。结构或证据缺陷单独说明，不能靠润色补造事实。
 
-If unavailable, report that state and use the parent module's existing guidance; do not claim invocation or maintain a drifting parallel copy.
+操作顺序：明确主张 → 检查支持范围 → 删除无分析作用的铺垫 → 补清已有逻辑连接 → 对照原句检查结论是否改变。仅在授权范围内编辑；不借润色改变研究对象、变量或理论。
 
-`academic-word-writing` may call the same independent skill for expression checks. Word formatting and render verification remain with the document workflow. Standalone invocation does not require a parent workbench, Word application or a private teaching-case corpus.
+## 2. 节省读者的理解成本
 
-Generic rules and constructed examples belong in the skill. Exact passages, company evidence, critical reading logs and source images stay in the project. GitHub publication, remote backup, licensing and visibility changes require separate authorization.
+让读者尽早知道这段解释什么，以及它与研究问题的关系。
 
-The independent language skill includes `assets/language_rules.jsonl` for portable constructed calibration examples. Retrieve that file from the independent skill when needed; do not maintain an untracked duplicate in this workbench.
+- 每段承担一个主要任务；开头给方向，中间展开必要依据，末尾说明推进到哪一步。不要机械限定为三句话。
+- 一句同时容纳背景、定义、发现、缺口和贡献时，按关系拆分，不只删限定语。
+- 对有多个先行词的“这一点”“上述问题”“this”明确指代。相邻段落通过实质问题相接，不只是加入“此外”“进一步”。
+- 不为缩短字数删掉条件、反例、样本范围或识别局限。信息密度不是名词堆叠。
+- 压缩没有解释作用的宏观背景、常识铺垫和重复价值判断；保留读者理解机制所必需的环节。
+
+检查：读者是否必须回到前段寻找主体、重新理解术语或猜测两句话的关系？若是，先修复这些问题，不增加修饰词。
+
+## 3. 概念稳定与机制清楚
+
+首次出现关键概念时说明含义、分析层级和用途。相邻概念应有区分标准；数字化、自动化和人工智能等不能为避免重复而互换。
+
+机制句应回答：什么条件改变了谁的什么行动或判断，通过何种过程影响什么结果？使用“赋能”“促进”“协同”“重构”时，应给具体过程或证据，不能以词代机制。
+
+技术部署不自动证明知识吸收、能力形成或绩效改善。资源可获得、资源被使用、使用产生效果是不同主张。图中箭头也须区分时间顺序、理论假设和已检验关系。
+
+## 4. 证据决定措辞强度
+
+| 证据或阶段 | 可采用的表达 | 不可自动升级为 |
+| --- | --- | --- |
+| 研究计划 | 拟检验、计划收集、将考察 | 已发现、已证明 |
+| 理论推导 | 提出、推导、预期；propose / expect | 经验证实 |
+| 横截面或一般观察性证据 | 与……相关；is associated with | 导致、必然提高 |
+| 有识别依据的实验或准实验 | 在明确条件下估计或支持某影响 | 无条件普遍因果规律 |
+| 质性研究 | 在所研究案例中识别过程或关系 | 估计总体效应大小 |
+| 摘要或题录 | 摘要报告、作为全文检索线索 | 已精读全文、已核对具体论证 |
+
+不机械给所有句子加“可能”。已核实描述可直接陈述，不确定性落在需要限定的推断上。统计显著、效应大小和实践重要性分别陈述。“未达到显著”不等于“没有效应”；中介估计不自动确立完整因果机制。
+
+## 5. 中文表达校准
+
+采用正式、具体、克制的论述。删除没有新增信息的“具有重大意义”“有效赋能”“全面跃升”，但保留有指标和证据的实质变化。
+
+“不是……而是……”“不仅……更……”不是禁句。只有区分真实竞争解释或概念边界时使用；两侧处于可比较层级，不无依据否定既有解释。不将近义词包装成新构念。
+
+连接词对应实际逻辑：并列用“同时”；细化用“具体而言”；比较须有共同维度；使用“因此”前检查前提是否充分。结构问题不能靠连续“首先、其次、最后”解决。
+
+## 6. 英文表达与中英互译
+
+使用可辨认的主语和准确动词。可用主动语态明确研究行动，也可在行动者不重要时用被动语态，不一律限制。保留学科术语，不为词汇变化改变构念名称。
+
+- 区分 suggest / show / estimate / explain、association / effect、may / must，不把推测译成证明。
+- 删除没有信息增量的 “in today's rapidly changing world” 等开场；不机械使用 “not merely … but rather …”。
+- 同一构念保持稳定译名，确有概念差别时不得合并；必要时列术语表。
+- 校验数量、单位、百分比与百分点、主体、否定范围、时间和关系方向。例如构造数量“0.5万”是 5,000。
+- 原文没有数据或机制时，翻译不能顺带补齐。中英文版本保持相同证据边界。
+
+## 7. 引文与语言一起核验
+
+把引文放在其支持的具体主张旁。一句有多个不同主张时，应拆分或分别标注。只支持背景的来源不能承担具体机制或结果。
+
+区分原始理论来源与后续应用；不把论文引述他人的发现写成该论文自己的结果。直接引语逐字核对并按当前格式保留定位。转述是否附页码依目标期刊要求和论述精确度决定，正文定位页码与书目的文章页码不能混淆。
+
+有 Zotero 等工具时使用真实动态字段；没有工具时可提供明确标为静态的作者年份引文和书目，不伪称已插入插件字段。引用工具处理元数据与格式，不证明原文支持主张。
+
+## 8. 输出与验收
+
+改写任务：先给可替换文本，再简要列实质性变动和待核验证据。范文学习：提炼段落功能、推进方式和引用逻辑，不搬运其主题、结论或未授权原文。
+
+交付前核对：含义未变；术语与层级稳定；各段有推进；不确定性未丢失；引用紧邻对应论断；无新增数据或夸大因果。正反例见同包 [写作示例](12-writing-examples.md)。
+
+
+---
+
+## 文件：references/12-writing-examples.md
+
+# 写作与语言校准示例
+
+以下均为本包构造的教学示例，不是论文原文、真实研究结果或可引用证据。X、Y、M、Z 是占位变量，须替换为实际构念。示例中的机制不是已知事实，展示的是判断方法，不是固定模板。
+
+## 1. 引言缺口不靠“研究少”
+
+待改：“信号理论广泛应用，但数字平台研究较少，因此本文填补空白。”
+
+问题：未说明已有解释，以及平台情境为什么改变理论预期。
+
+动作：核对最近邻研究；描述待解释关系或假设；使研究行动回应缺口。
+
+有条件的示意：“关于 X 的既有解释主要讨论 Z 条件下的 Y。本文考察 Z 改变时，这一解释是否仍然成立，以及哪些过程能够解释其适用范围。”
+
+边界：“主要讨论”需要文献支持，Z 必须对应设计。已有研究已经回答时，应收缩或改换贡献，不靠换词维持空白。
+
+## 2. 综述从罗列变比较
+
+待改：“甲研究 X，乙研究 Y，丙研究 Z，因此研究很丰富。”
+
+动作：找到可比较的问题/维度，区分结论与样本方法差异，再放对应来源。
+
+结构示意：“围绕同一问题，一类研究通过过程 M 解释结果，另一类强调条件 Z。二者对结果方向的判断在某些条件下不同。这种差别是否来自所研究条件，需要能够直接比较条件的设计判断。”
+
+边界：核对原文才可判断是否为两类、是否同一结果；不能把不同任务的发现强写成冲突，不用虚构作者年份填充。
+
+## 3. 贡献不是结果复述
+
+待改：“本文发现 X 正向影响 Y，丰富了研究。”
+
+若仅检验关联：“本研究为该关系在所考察情境中的关联提供了补充证据。”不能自动升级新机制。
+
+若设计能区分和检验机制，可述：“本研究的证据支持通过 M 解释这一关系，并限定了该解释成立的条件。”还需明确与已有解释的差别和实际检验条件。
+
+边界：贡献来自证据与设计，不能由“揭示”“重构”“首次”创造。
+
+## 4. 中文润色不偷换因果
+
+已知：横截面调查发现 X 与 Y 正相关，无因果识别。
+
+待改：“X 显著推动 Y 全面提升，证明机制具有普适性。”
+
+改写：“在该调查样本中，X 与 Y 呈正相关。由于资料未识别因果方向，这一关系尚不能解释为 X 对 Y 的因果影响。”
+
+说明：保留方向，删去无依据的因果、机制和普适性。材料无统计检验，不补“显著”。
+
+## 5. 英文压缩保留证据强度
+
+Input: “In today's rapidly changing world, X is an extremely important factor that undoubtedly causes Y, as demonstrated by our cross-sectional survey.”
+
+Revision: “In our cross-sectional survey, X was associated with Y.”
+
+说明：删空泛开场和形容词，依证据保留关联。正式稿仍需真实样本和统计结果。若有可信因果识别则另作表述，不机械弱化。
+
+## 6. 压缩保留否定与数量
+
+已知：“部分受访者未选择‘非常同意’，其中也包括选择‘同意’者。”
+
+错误：“多数受访者不认同。”
+
+适当：“未选择‘非常同意’的受访者并不都持反对意见。”
+
+边界：没有人数不添加“多数”，没有反对选项统计不推算比例。翻译也保留分类差异。
+
+## 7. 实践建议匹配测量
+
+已知：实验仅测短期选择意愿，未测实际销量与实施成本。
+
+待改：“企业应全面推广，从而大幅增加销售。”
+
+改写：“实验结果支持在所考察条件下试用这一措施，以评估其对选择意愿的影响；实际购买与实施成本仍需进一步验证。”
+
+边界：仍需明确受众、决策和情境，不把未测收益写成已实现收益。
+
+## 8. 只有摘要与没有工具时
+
+只有题录和摘要时，可以据摘要主题梳理段落功能、校准语气并保留待核验位置；不能声称精读全文，不能补页码、样本与机制。交付区分语言修改和需全文支持的判断。
+
+没有 Zotero 不妨碍文字工作，但未实际操作字段就只能称静态引文。没有其他 Skill 不妨碍使用本包内置语言规则，不能让用户提供作者私有库访问权。
 
 
 ---
@@ -345,9 +586,11 @@ Derived from `HZQ5/academic-paper-writing-skill`, source commit `95568a02902de76
 
 Preserved: paper argument/revision rules, evidence boundaries, historical writing references, dated journal-list snapshots and five Python helpers. Historical preferences are optional, not universal academic requirements. Their references to earlier topic materials are provenance notes, not runtime dependencies.
 
-Adapted: removed private four-repository synchronization from runtime requirements; added portable use, public installation documentation, a local installer and a single-file fallback. Optional language-calibration, Zotero and document tools are companions, never prerequisites.
+Adapted: removed private four-repository synchronization from runtime requirements; added portable use, public installation documentation, a local installer and a single-file fallback. The 2026-11-03 revision embeds generic chapter guidance, bilingual language calibration and constructed examples. Ordinary writing no longer routes to a separate language Skill. Zotero and document tools are optional for text work but required for claims about actual app operations or dynamic citation fields.
 
 Maintain this edition independently. Validate instructions and relative references, run affected scripts, scan for secrets/personal paths, and update `MANIFEST.json`. Keep private manuscripts, participant data, credentials, review originals, model weights and local databases out of the repository. Never synchronize another repository or overwrite an installed Skill without authorization.
+
+From the repository root, run `python3 scripts/build_public_bundle.py` to rebuild `PORTABLE.md` and the SHA-256 manifest, then run the same command with `--check` and `python3 -m unittest discover -s tests -v`. The manifest excludes itself and development/cache metadata. Tests verify packaging and installation boundaries, not model behaviour, research validity or acceptance by a journal.
 
 No blanket open-source license is inferred from the source. Journal-list snapshots retain their source owners' rights and are historical lookup aids; check issuing bodies for current information and reuse conditions.
 
@@ -698,4 +941,4 @@ Do not stack abstracts, invent citations, write a gap as merely “few studies,�
 
 ## Provenance note
 
-The earlier version contained agricultural-product/livestream examples. It was moved to `agri-consumer-livestream-knowledge/references/legacy-agri-literature-review-whitepaper.md` as direction-specific provenance.
+The earlier version contained agricultural-product/livestream examples that were separated into a topic-specific private knowledge base. This is a provenance note, not an instruction to load that base. Use the bundled generic rules and constructed examples; no access to those private materials is needed.

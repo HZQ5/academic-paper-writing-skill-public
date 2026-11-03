@@ -17,6 +17,22 @@
 
 采用 [Agent Skills](https://agentskills.io/specification) 的 `SKILL.md + references/ + scripts/ + assets/` 结构。不依赖作者的私有仓库、API 密钥或其他 Skill。这是写作规则与辅助工具，不是模型权重；安装不会训练模型。
 
+## 不只是期刊目录：公开包内置哪些写作规则？
+
+`references/` 是与入口一起安装的本地模块，不是需要访问作者私有库的子 Skill。普通写作与语言修改不要求额外安装 `academic-language-calibration`，也不要求作者的论文、历史对话或 Zotero 文库。
+
+| 内置模块 | 能帮助完成什么 |
+| --- | --- |
+| [各章节写作指南](references/04-academic-writing.md) | 标题与摘要；引言五个逻辑环节；综合式文献综述；理论与假设；不同研究类型的方法与结果；讨论、理论贡献、实践启示、局限与结论；审稿回应 |
+| [中英文语言规范](references/11-language-calibration.md) | 保留原意，统一概念与主体，减少空泛表述，使措辞与证据强度匹配，节省读者精力；翻译时保留条件、否定与数量 |
+| [八组构造写作示例](references/12-writing-examples.md) | 对照修改缺口、综述、贡献、因果措辞、中英文学术表达、语义及引用边界；示例不冒充真实研究 |
+| [数据与证据](references/07-data-evidence.md) | 区分原始发现、转引、摘要和全文；建立论断与来源定位的对应关系 |
+| [规范与期刊目录](references/03-standards-and-registries.md) | 查阅附带的历史目录；区分期刊分级、论文质量和投稿格式 |
+
+入口会按当前任务路由到相应模块，不要求每次把所有文件读完。章节结构是可调整的指导，不将某门课程的页数、某一种方法或作者个人偏好变成通用硬标准。
+
+**能力边界：** 这些规则支持独立写作和修订；下载受限论文、操作 Word 动态字段、访问 Zotero 等仍需要使用者自己的授权与工具。缺少这些工具时可以处理文本与静态引用，但不能声称已经下载、阅读全文或插入动态引文。
+
 ## 安装到 AI 工具
 
 下载本库 ZIP 并解压，或克隆到名称匹配的目录：
@@ -57,6 +73,8 @@ cd academic-paper-writing
 - “按这个 Skill 修改引言，保留研究问题与变量关系，先给可替换文本，再解释依据。”
 - “把文献组织成有共识、争议、机制、边界和缺口的综述；缺少全文证据的判断单独标明。”
 - “逐条回应审稿意见，说明实际修改、位置和证据，不编造新增检验。”
+- “只用公开包内置规则，检查这段中文的因果措辞和概念一致性，输出修订文本及待核验项。”
+- “按引言五个逻辑环节检查我的草稿，不改变变量关系；没有证据的贡献不要写成已验证结论。”
 
 ## 正式版与 Fork 的边界
 
@@ -80,11 +98,15 @@ python3 scripts/lookup_journal_rank.py "Journal of Management"
 python3 scripts/privacy_scan.py .
 ```
 
+维护公开副本时，可运行 `python3 scripts/build_public_bundle.py` 同步生成单文件版与摘要清单，再运行 `python3 scripts/build_public_bundle.py --check` 和 `python3 -m unittest discover -s tests -v` 检查包内引用、安装隔离和生成文件一致性。这些维护检查在仓库根目录运行，不是写作前置步骤。
+
 证据文件每行一个 JSON，字段为 `evidence_id`、`source_id`、`claim`、`locator`、`quote`、`status`、`source_genre`、`focal_status`。`status` 为 `candidate/verified/rejected/blocked`；`focal_status` 为 `focal/secondary/not-applicable/unclear`。结构校验不会替代原文核对。
 
 ## 来源、数据与维护
 
 基于作者 HZQ5 的私有原库 `academic-paper-writing-skill`，源提交 `95568a02902de76adbee1630aac2439716ca96bd`，于 2026-10-26 制作公开副本。原库和现有本机安装保持原状。本版保留论文规则与全部原始参考/工具文件，调整私有同步指令，增加安装器和文本入口。变更见 `CHANGELOG.md`，文件摘要见 `MANIFEST.json`。
+
+2026-11-03 的自包含修订将通用章节规则、语言校准与构造示例直接整合进公开包，替换原来指向独立语言 Skill 的调用建议；不发布私有研究材料或历史对话。若你正在查看更新分支，主分支未合并前仍是原版，请以所在分支的文件为准。
 
 随附期刊名单是注明版本的历史快照，不代表实时排名或本项目对第三方数据的所有权。当前名单应核验官方来源。历史风格材料是可选偏好，不应覆盖当前要求或研究设计。
 
